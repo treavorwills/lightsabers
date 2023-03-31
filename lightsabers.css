@@ -38,6 +38,54 @@
     border-top-right-radius: 50% 7%;
 }
 
+.redSaber {
+    width: 1.5em;
+    height: 20em;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, red, white, red),
+    radial-gradient(white, 50%, red, red);
+    background-size: 75% 95%,
+    75% 10%;
+    background-position: center center,
+    center 0%;
+    padding-bottom: 15px;
+    margin-bottom:-15px;
+    border-top-left-radius: 50% 7%;
+    border-top-right-radius: 50% 7%;
+}
+
+.greenSaber {
+    width: 1.5em;
+    height: 20em;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, green, white, green),
+    radial-gradient(white, 50%, green, green);
+    background-size: 75% 95%,
+    75% 10%;
+    background-position: center center,
+    center 0%;
+    padding-bottom: 15px;
+    margin-bottom:-15px;
+    border-top-left-radius: 50% 7%;
+    border-top-right-radius: 50% 7%;
+}
+
+.darkSaber {
+    width: 1.5em;
+    height: 20em;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, white, black, white),
+    radial-gradient(black, 50%, white, white);
+    background-size: 75% 95%,
+    75% 10%;
+    background-position: center center,
+    center 0%;
+    padding-bottom: 15px;
+    margin-bottom:-15px;
+    border-top-left-radius: 50% 7%;
+    border-top-right-radius: 50% 7%;
+}
+
 .anakin {
     width: 2em;
     height: 10em;
@@ -79,4 +127,118 @@
     70% 95%,
     100% 94.5%,
     center center;    
+}
+
+.luke {
+    width: 2em;
+    height: 10em;
+    left: 50%;
+    bottom: 2.3em;
+    background-repeat: no-repeat;
+    background-image: 
+    repeating-linear-gradient(to bottom, rgb(0, 0, 0), rgb(92, 47, 0) 2px),
+    linear-gradient(to bottom, black, rgb(36, 36, 36), black),
+    linear-gradient(to right, grey, rgb(46, 46, 46)),
+    linear-gradient(to right, grey, rgb(46, 46, 46)),
+    linear-gradient(to right, grey, rgb(46, 46, 46)),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(118, 51, 0), rgb(189, 82, 0), 60%, rgb(95, 41, 0)),
+    linear-gradient(to right, rgb(118, 51, 0), rgb(189, 82, 0), 60%, rgb(92, 40, 0)),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(0, 0, 0), rgb(63, 63, 63), 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(44, 44, 44), rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
+    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black);
+    background-size: 
+    30% 15%,
+    33% 16%,
+    15% 5%,
+    15% 5%,
+    15% 5%,
+    60% 5%,
+    100% 1%, 
+    80% 5%,
+    60% 7%,
+    30% 2%,
+    20% 4%,
+    60% 5%,
+    80% 1%,
+    20% 5%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    80% 1%,
+    55% 30%,
+    80% 30%,
+    60% 10%;
+    background-position: 
+    20% 75%,
+    25% 75%,
+    10% 98%,
+    50% 98%,
+    90% 98%,
+    center 0%,
+    center 5%,
+    center 6%,
+    center 11%,
+    center 17%,
+    center 19%,
+    center 23%,
+    center 27%,
+    center 29%,
+    center 35%,
+    center 38%,
+    center 41%,
+    center 44%,
+    center 47%,
+    center 50%,
+    center 53%,
+    center 56%,
+    center 59%,
+    center 46%,
+    center 88%,
+    center 100%;    
+}
+
+.din {
+    width: 2em;
+    height: 10em;
+    left: 50%;
+    bottom: 2.3em;
+    background-repeat: no-repeat;
+    background-image: 
+    linear-gradient(to right, black, rgb(37, 37, 37), black),
+    linear-gradient(to right, black, rgb(37, 37, 37), black),
+    repeating-linear-gradient(to bottom, black, grey 8px),
+    repeating-linear-gradient(to right, grey, black 12px);
+    background-size: 
+    70% 10%,
+    70% 10%,
+    80% 30%,
+    80% 50%;
+    background-position:
+    center 100%, 
+    center 0, 
+    50% 85%,
+    center 20%;  
+    border-top-right-radius: 50% 50%;
+    border-top-left-radius: 30%10%;  
 }
