@@ -20,80 +20,70 @@
     height: 75vh; 
     padding: 10px;
     align-items: center;
+    transition: transform .2s ease-in-out;
+    overflow: hidden;
 }
 
-.blueSaber {
-    width: 1.5em;
-    height: 20em;
-    background-repeat: no-repeat;
+.blue {
     background-image: linear-gradient(to right, blue, white, blue),
     radial-gradient(white, 50%, blue, rgb(0, 0, 255));
     background-size: 75% 95%,
     75% 10%;
     background-position: center center,
     center 0%;
-    padding-bottom: 15px;
-    margin-bottom:-15px;
-    border-top-left-radius: 50% 7%;
-    border-top-right-radius: 50% 7%;
 }
 
-.redSaber {
-    width: 1.5em;
-    height: 20em;
-    background-repeat: no-repeat;
+.red {
     background-image: linear-gradient(to right, red, white, red),
     radial-gradient(white, 50%, red, red);
     background-size: 75% 95%,
     75% 10%;
     background-position: center center,
     center 0%;
-    padding-bottom: 15px;
-    margin-bottom:-15px;
-    border-top-left-radius: 50% 7%;
-    border-top-right-radius: 50% 7%;
 }
 
-.greenSaber {
-    width: 1.5em;
-    height: 20em;
-    background-repeat: no-repeat;
+.green {
     background-image: linear-gradient(to right, green, white, green),
     radial-gradient(white, 50%, green, green);
     background-size: 75% 95%,
     75% 10%;
     background-position: center center,
     center 0%;
+}
+
+.saber {
+    width: 1.5em;
+    height: 20em;
+    background-repeat: no-repeat;
     padding-bottom: 15px;
     margin-bottom:-15px;
     border-top-left-radius: 50% 7%;
     border-top-right-radius: 50% 7%;
+    z-index: 0;
 }
 
-.darkSaber {
-    width: 1.5em;
-    height: 20em;
-    background-repeat: no-repeat;
+.dark {
     background-image: linear-gradient(to right, white, black, white),
     radial-gradient(black, 50%, white, white);
     background-size: 75% 95%,
     75% 10%;
     background-position: center center,
     center 0%;
-    padding-bottom: 15px;
-    margin-bottom:-15px;
-    border-top-left-radius: 50% 7%;
-    border-top-right-radius: 50% 7%;
 }
 
-.anakin {
+.hilt {
+    z-index:1;
     width: 2em;
     height: 10em;
     left: 50%;
     bottom: 2.3em;
     /* border-radius: 10%; */
-    border-top-right-radius: 100% 10%;
     background-repeat: no-repeat;
+}
+
+.anakin {
+    border-top-right-radius: 100% 10%;
+
     background-image: 
     repeating-linear-gradient(to bottom, rgb(227, 168, 28), rgb(163, 128, 0) 2px),
     radial-gradient(rgb(155, 127, 0) 50%, #a4a4a443),
@@ -130,11 +120,6 @@
 }
 
 .luke {
-    width: 2em;
-    height: 10em;
-    left: 50%;
-    bottom: 2.3em;
-    background-repeat: no-repeat;
     background-image: 
     repeating-linear-gradient(to bottom, rgb(0, 0, 0), rgb(92, 47, 0) 2px),
     linear-gradient(to bottom, black, rgb(36, 36, 36), black),
@@ -219,11 +204,9 @@
 }
 
 .din {
-    width: 2em;
-    height: 10em;
-    left: 50%;
-    bottom: 2.3em;
-    background-repeat: no-repeat;
+    border-top-right-radius: 50% 50%;
+    border-top-left-radius: 30%10%;  
+
     background-image: 
     linear-gradient(to right, black, rgb(37, 37, 37), black),
     linear-gradient(to right, black, rgb(37, 37, 37), black),
@@ -238,7 +221,27 @@
     center 100%, 
     center 0, 
     50% 85%,
-    center 20%;  
-    border-top-right-radius: 50% 50%;
-    border-top-left-radius: 30%10%;  
+    center 20%;
+}
+
+
+/* ANIMATIONS */
+
+/* Space */
+/* .space:hover {
+    transform: rotate(5deg);
+} */
+
+
+@keyframes ignite {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.saber {
+    animation: ignite 1000ms;
 }
