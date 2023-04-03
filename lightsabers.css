@@ -1,5 +1,5 @@
 * {
-    /* background-color: rgba(0, 0, 0, 1); */
+    /* background-color: grey; */
 }
 
 .wall {
@@ -10,7 +10,7 @@
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .space {
@@ -21,11 +21,13 @@
     align-items: center;
     transition: transform .2s ease-in-out;
     overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .blue {
-    background-image: linear-gradient(to right, blue, white, blue),
-    radial-gradient(white, 50%, blue, rgb(0, 0, 255));
+    background-image: linear-gradient(to right, dodgerblue, white, dodgerblue),
+    radial-gradient(white, 50%, dodgerblue, rgb(0, 0, 255));
     background-size: 75% 95%,
     75% 10%;
     background-position: center center,
@@ -42,8 +44,8 @@
 }
 
 .green {
-    background-image: linear-gradient(to right, green, white, green),
-    radial-gradient(white, 50%, green, green);
+    background-image: linear-gradient(to right, limegreen, white, limegreen),
+    radial-gradient(white, 50%, limegreen, limegreen);
     background-size: 75% 95%,
     75% 10%;
     background-position: center center,
@@ -232,65 +234,79 @@
 
 .obiwan {
     background-image: 
-    linear-gradient(to right, grey, rgb(46, 46, 46)),
-    linear-gradient(to right, grey, rgb(46, 46, 46)),
-    linear-gradient(to right, grey, rgb(46, 46, 46)),
-    linear-gradient(to right, rgb(150, 150, 150), rgb(102, 102, 102), rgb(123, 123, 123), black),
-    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
-    repeating-linear-gradient(black, rgb(52, 52, 52) 4px),
-    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), yellow),
-    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), black),
-    linear-gradient(black, rgb(53, 53, 53), black),
-    linear-gradient(to right, rgb(118, 51, 0), rgb(189, 82, 0), 60%, rgb(92, 40, 0)),
-    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
-    linear-gradient(to right, rgb(0, 0, 0), rgb(63, 63, 63), 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(0, 0, 0), grey, 60%, rgb(0, 0, 0)),
+    repeating-linear-gradient(to bottom, darkgoldenrod, gold 5px),
+    linear-gradient(to right, darkgoldenrod, gold),
+    linear-gradient(to right, darkgoldenrod, gold),
+    linear-gradient(to bottom, rgb(193, 129, 0), rgb(145, 82, 0), rgb(193, 129, 0)),
+    linear-gradient(to right, silver 30%, grey),
+    linear-gradient(to right, silver 30%, grey),
+    linear-gradient(to right, silver 30%, grey),
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey),
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey),
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey),
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey),
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey),
+    linear-gradient(to right, rgb(118, 51, 0), rgb(189, 82, 0), 60%, rgb(95, 41, 0)),
+    linear-gradient(to right, gold, rgb(224, 224, 224),rgb(179, 152, 0), gold),
+    linear-gradient(to right, gold, rgb(224, 224, 224), rgb(179, 152, 0), gold),
+    linear-gradient(to right, gold, rgb(224, 224, 224),rgb(179, 152, 0), gold),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
+    linear-gradient(to right, rgb(157, 157, 157), black, 60%, rgb(157, 157, 157)),
     linear-gradient(to right, rgb(44, 44, 44), rgb(0, 0, 0)),
-    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black),
-    linear-gradient(to right, rgb(113, 113, 113), rgb(165, 165, 165), rgb(123, 123, 123), black);
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey),
+    repeating-linear-gradient(to right, rgb(83, 83, 83), black 5px),
+    linear-gradient(to right, grey, aliceblue 20% 40%, grey);
     background-size: 
-    15% 5%,
-    15% 5%,
-    15% 5%,
-    80% 3%,
-    15% 15%, 
-    40% 15%,
-    17% 3%,
-    15% 15%,
-    15% 3%,
+    10% 15%,
+    12% 3%,
+    12% 3%,
+    15% 16%,
+    18% 5%,
+    18% 5%,
+    18% 5%,
+    100% 2%,
+    88% 3%, 
+    80% 5%,
+    60% 9%,
+    30% 2%,
+    20% 4%,
     60% 5%,
-    80% 1%,
+    70% 1%,
     20% 5%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    80% 1%,
-    55% 30%,
-    80% 30%,
-    60% 10%;
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    70% 2%,
+    60% 30%,
+    80% 20%,
+    80% 9%,
+    90% 10%;
     background-position: 
-    10% 98%,
+    60% 75%,
+    30% 68%,
+    30% 75%,
+    60% 75%,
+    0% 98%,
     50% 98%,
-    90% 98%,
+    100% 98%,
     center 0%,
-    20% 3%,
-    center 3%,
-    29% 18%,
-    80% 3%,
-    center 18%,
+    center 1%,
+    center 4%,
+    center 9%,
+    center 17%,
+    center 19%,
     center 23%,
     center 27%,
     center 29%,
@@ -304,7 +320,8 @@
     center 56%,
     center 59%,
     center 46%,
-    center 88%,
+    center 77%,
+    center 89%,
     center 100%;    
 }
 
